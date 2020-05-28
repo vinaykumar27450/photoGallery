@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+#container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:5px;
+    padding:7px;
+    place-items:center center;
+    grid-template-areas:"a b c d"
+        "e f g h"
+        "i j k l"
+        "m n o p";
+}
+#container > img{
+    max-width:100%;
+}
+#center{
+    grid-area: 2/2/4/4;
+}
